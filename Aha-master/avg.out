@@ -1,0 +1,25 @@
+Searching for programs with 4 operations.
+
+Found a 4-operation program:
+   and   r1,ry,rx
+   xor   r2,ry,rx
+   shrs  r3,r2,#1
+   add   r4,r3,r1
+   Expr: (((y ^ x) >>s 1) + (y & x))
+
+Found a 4-operation program:
+   xor   r1,ry,rx
+   and   r2,ry,rx
+   shrs  r3,r1,#1
+   add   r4,r3,r2
+   Expr: (((y ^ x) >>s 1) + (y & x))
+
+Found a 4-operation program:
+   xor   r1,ry,rx
+   shrs  r2,r1,#1
+   and   r3,ry,rx
+   add   r4,r3,r2
+   Expr: ((y & x) + ((y ^ x) >>s 1))
+Found 3 solutions.
+Counters = 96035, 131168, 12302768, 648330608, total = 660860579
+Process time = 14.329 secs
